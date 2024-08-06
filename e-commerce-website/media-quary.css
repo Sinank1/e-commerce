@@ -1,0 +1,346 @@
+/* Akıllı telefonlar (portre modunda) */
+@media (max-width: 599px) {
+  /* Burada akıllı telefonlar için stil ayarlarını yapabilirsiniz */
+
+  @import "~bootstrap-icons/font/bootstrap-icons.css";
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  section {
+    height: 1000px;
+    width: 100%;
+    background-color: #f2f0f1;
+  }
+
+  section .row-cols-2 {
+    width: 100%;
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+  }
+
+  section .row .ust {
+    width: 100%;
+    height: 800px;
+  }
+
+  .row .ust .title {
+    height: auto;
+    width: 500px;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    gap: 5px;
+  }
+
+  .row .ust .title h1 {
+    font-size: x-small;
+    font-weight: bolder;
+    height: auto;
+    width: 500px;
+  }
+
+  .row .ust p {
+    font-size: larger;
+    width: 520px;
+    height: 33px;
+    margin-left: 20px;
+    position: relative;
+    top: 50px;
+  }
+
+  .row .ust .button {
+    width: 560px;
+    height: 52px;
+    border-radius: 40px;
+    color: white;
+    background-color: black;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: relative;
+    top: 130px;
+  }
+  .row .alt {
+    width: 400px;
+    position: relative;
+    top: -200px;
+  }
+  .col .row {
+    width: 400px;
+    position: relative;
+    top: -550px;
+  }
+  .row .alt .col {
+    width: 100%;
+  }
+
+  .alt .row :nth-child(1) {
+    border-right-style: none;
+  }
+
+  .row .yan {
+    position: relative;
+    top: -100px;
+    height: 500px;
+    width: 100%;
+  }
+
+  .row .yan .birinci {
+    float: right;
+    margin: 0;
+  }
+  .row .yan img {
+    position: relative;
+    height: 400px;
+    width: 500px;
+    right: 150px;
+    top: -200px;
+  }
+  .row .yan .ikinci {
+    position: relative;
+    top: -500px;
+  }
+  .markalar {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+  }
+  .markalar div {
+    width: 100%;
+    height: 100px;
+    margin-left: 50px;
+  }
+  .markalar h1 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+  .yeni-ürünler {
+    width: 100%;
+    height: 600px;
+    border-bottom-style: inset;
+  }
+  .yeni-ürünler h1 {
+    text-align: start;
+    justify-content: start;
+    margin-top: 50px;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 500px;
+    margin-top: 0px;
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 5 / 1;
+    height: 200px;
+    width: 200px;
+    align-content: center;
+    align-self: center;
+    margin-left: 20px;
+  }
+  .div2 {
+    grid-area: 1 / 2 / 5 / 3;
+    height: 200px;
+
+    width: 200px;
+    align-content: center;
+    align-self: center;
+    margin-left: 10px;
+  }
+  .div3 {
+    grid-area: 1 / 3 / 5 / 4;
+    align-content: center;
+    align-self: center;
+    width: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .div4 {
+    grid-area: 1 / 4 / 5 / 5;
+    align-content: center;
+    align-self: center;
+    width: 200px;
+    margin-right: 0px;
+  }
+  .square {
+    width: 200px;
+    height: 200px;
+    background-color: #f0eeed; /* Karelerin rengi */
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .parent h5 {
+    font-size: large;
+  }
+  .parent .price {
+    font-size: x-large;
+  }
+
+  .yeni-ürünler button {
+    width: 218px;
+    height: 52px;
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    top: 0px;
+  }
+  .cok-satan button {
+    width: 218px;
+    height: 52px;
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    top: 100px;
+  }
+  .browse {
+    height: 185vh;
+    width: 90%;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .browse h1 {
+    font-weight: bolder;
+    font-size: xx-large;
+    position: relative;
+    left: 20px;
+    top: 70px;
+  }
+
+  #cssportal-grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+  }
+  #div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #ffffff;
+    font-weight: bolder;
+    font-size: xx-large;
+    position: relative;
+    height: 250px;
+    width: 400px;
+
+    border-radius: 40px;
+  }
+  #div1 h3 {
+    font-weight: bolder;
+    font-size: xx-large;
+    position: relative;
+    left: 36px;
+    top: 25px;
+  }
+  #div2 {
+    grid-area: 2/1/3/2;
+    background-color: #ffffff;
+    font-weight: bolder;
+    font-size: xx-large;
+    position: relative;
+    height: 250px;
+    width: 400px;
+
+    right: 0px;
+    border-radius: 40px;
+  }
+  #div2 h3 {
+    font-weight: bolder;
+    font-size: xx-large;
+    position: relative;
+    left: 36px;
+    top: 25px;
+  }
+  #div3 {
+    grid-area: 3/1/4/2;
+    background-color: #ffffff;
+    font-weight: bolder;
+    font-size: xx-large;
+    height: 250px;
+    width: 400px;
+
+    border-radius: 40px;
+  }
+  #div3 h3 {
+    font-weight: bolder;
+    font-size: xx-large;
+    position: relative;
+    left: 36px;
+    top: 25px;
+  }
+  #div4 {
+    grid-area: 4/1/5/2;
+    background-color: #ffffff;
+    font-weight: bolder;
+    font-size: xx-large;
+    height: 250px;
+    width: 400px;
+    border-radius: 40px;
+  }
+  #div4 h3 {
+    font-weight: bolder;
+    font-size: xx-large;
+    position: relative;
+    left: 36px;
+    top: 25px;
+  }
+}
+
+/* Akıllı telefonlar (manzara modunda) ve küçük tabletler */
+@media (min-width: 600px) and (max-width: 899px) {
+  /* Burada küçük tabletler ve manzara modundaki telefonlar için stil ayarlarını yapabilirsiniz */
+}
+
+/* Orta boyutlu tabletler ve küçük dizüstü bilgisayarlar */
+@media (min-width: 900px) and (max-width: 1199px) {
+  /* Burada orta boyutlu tabletler ve küçük dizüstü bilgisayarlar için stil ayarlarını yapabilirsiniz */
+}
+
+/* Büyük ekranlar (dizüstü bilgisayarlar ve masaüstü bilgisayarlar) */
+@media (min-width: 1200px) {
+  /* Burada büyük ekranlar için stil ayarlarını yapabilirsiniz */
+}
