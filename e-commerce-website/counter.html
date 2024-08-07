@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="counter.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <span class="minus">-</span>
+      <span class="num">1</span>
+      <span class="plus">+</span>
+    </div>
+
+    <script>
+      const plus = document.querySelector(".plus"),
+        minus = document.querySelector(".minus"),
+        num = document.querySelector(".num");
+
+      let a = 1;
+      plus.addEventListener("click", () => {
+        a++;
+        a = a;
+        num.innerText = a;
+      });
+
+      minus.addEventListener("click", () => {
+        if (a > 0) {
+          a--;
+          a = a;
+          num.innerText = a;
+        }
+      });
+    </script>
+  </body>
+</html>
