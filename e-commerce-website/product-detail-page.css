@@ -506,6 +506,84 @@ h3 {
   border-radius: 26px;
 }
 
+.cok-satan {
+  width: 100%;
+  height: 700px;
+}
+.cok-satan h1 {
+  font-weight: bolder;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 500px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 5 / 1;
+
+  width: 300px;
+  align-content: center;
+  align-self: center;
+  margin-left: 140px;
+}
+.div2 {
+  grid-area: 1 / 2 / 5 / 3;
+  width: 300px;
+  align-content: center;
+  align-self: center;
+  margin-left: 10px;
+}
+.div3 {
+  grid-area: 1 / 3 / 5 / 4;
+  align-content: center;
+  align-self: center;
+  width: 300px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.div4 {
+  grid-area: 1 / 4 / 5 / 5;
+  align-content: center;
+  align-self: center;
+  width: 300px;
+  margin-right: 150px;
+}
+.square {
+  width: 300px;
+  height: 300px;
+  background-color: #f0eeed; /* Karelerin rengi */
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.parent h5 {
+  font-size: larger;
+}
+.parent .price {
+  font-size: xx-large;
+}
+
+.cok-satan button {
+  width: 218px;
+  height: 52px;
+  background-color: white;
+  color: black;
+  border-radius: 40px;
+  margin-top: 20px;
+  position: absolute;
+  left: 42%;
+  top: 2300px;
+}
+
 .subscribe {
   display: flex;
   justify-content: center;

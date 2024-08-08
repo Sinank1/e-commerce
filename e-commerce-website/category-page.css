@@ -1,0 +1,822 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin-right: 0px;
+  padding-right: 0px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+body {
+  margin-right: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+header {
+  max-width: 100%;
+  height: 38px;
+  background-color: black;
+  margin-left: 0;
+  padding-left: 0;
+  top: 0px;
+}
+
+header p {
+  color: white;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+header p a {
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  height: 96px;
+  background-color: white;
+}
+.navbar-nav {
+  flex-direction: row;
+}
+
+.form-control {
+  margin-right: 10px; /* Arama kutusu ve ikonlar arasındaki boşluk */
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 100px;
+}
+
+.fa-cart-shopping,
+.fa-user {
+  font-size: 1.2rem; /* İkonların boyutu */
+}
+.container-fluid {
+  height: 48px;
+  width: 90%;
+  text-align: center;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.navbar .nav-item {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.d-flex {
+  width: 577px;
+  border-radius: 50%;
+}
+.bread-crumbs {
+  margin-top: 25px;
+  margin-left: 150px;
+}
+.bread-crumbs h6 {
+  color: grey;
+}
+.title {
+  display: flex;
+  margin-left: 50px;
+  height: 50px;
+  width: 90%;
+}
+.title h1 {
+  display: flex;
+
+  justify-content: center;
+}
+.container {
+  display: flex;
+  padding: 0;
+  width: 90%;
+  height: 150vh;
+}
+
+#cssportal-grid {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  width: 100%;
+}
+#div1 {
+  grid-area: 1 / 1 / 5 / 2;
+  height: 150vh;
+  padding-right: 0px;
+}
+.filter {
+  width: 300px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.arrow {
+  transition: transform 0.3s;
+}
+
+.filter-content {
+  display: none;
+  padding-top: 10px;
+}
+
+.filter-content.open {
+  display: block;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+}
+
+.category-name p,
+.category-menu p {
+  margin: 5px 0;
+}
+.price-container {
+  width: 300px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+}
+
+.price-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.arrow {
+  transition: transform 0.3s;
+}
+
+.price-filter {
+  display: none;
+  padding-top: 10px;
+}
+
+.price-filter.open {
+  display: block;
+}
+
+.slider-container {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  border-bottom: 2px solid #ddd;
+}
+
+input[type="range"] {
+  position: absolute;
+  width: 100%;
+  -webkit-appearance: none;
+  background: transparent;
+  pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.slider-track {
+  position: absolute;
+  height: 5px;
+  background-color: #ddd;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.price-labels {
+  position: relative;
+  top: 25px;
+}
+
+.price-labels span {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #333;
+}
+
+.color-container {
+  width: 300px;
+  padding: 20px;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+}
+
+.color-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.arrow {
+  transition: transform 0.3s;
+}
+
+.color-filter {
+  display: none;
+  padding-top: 10px;
+}
+
+.color-filter.open {
+  display: block;
+}
+
+.color-select p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.first-five,
+.second-five {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Yuvarlak yapar */
+  border: 2px solid transparent;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.color-box.selected {
+  border-color: #007bff; /* Seçili renk kenar rengi */
+}
+
+.color-box.selected::after {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #007bff; /* Tik işareti rengi */
+  font-size: 20px;
+}
+
+.first-color {
+  background-color: #ff5733; /* Kırmızımsı Turuncu */
+}
+
+.second-color {
+  background-color: #33ff57; /* Yeşil */
+}
+
+.third-color {
+  background-color: #3357ff; /* Mavi */
+}
+
+.fourth-color {
+  background-color: #ff33a1; /* Pembe */
+}
+
+.fifth-color {
+  background-color: #ffb533; /* Turuncu */
+}
+
+.sixth-color {
+  background-color: #33fff9; /* Camgöbeği */
+}
+
+.seventh-color {
+  background-color: #9d33ff; /* Mor */
+}
+
+.eighth-color {
+  background-color: #ff3333; /* Kırmızı */
+}
+
+.ninth-color {
+  background-color: #b3ff33; /* Açık Yeşil */
+}
+
+.tenth-color {
+  background-color: #ff5733; /* Koyu Turuncu */
+}
+
+.size-container {
+  width: 300px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+}
+
+.size-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.size-content {
+  display: none;
+  padding-top: 10px;
+}
+
+.size-content.open {
+  display: block;
+}
+
+.sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.size-box {
+  width: 90px;
+  height: 50px;
+  border-radius: 20px; /* Yuvarlak yapar */
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.size-box.selected {
+  border-color: #007bff; /* Seçili renk kenar rengi */
+}
+
+.size-box.selected::after {
+  content: "✔";
+  color: #007bff; /* Tik işareti rengi */
+  font-size: 20px;
+}
+
+.dress-style {
+  width: 300px;
+  height: 270px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.dress-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.arrow {
+  transition: transform 0.3s;
+}
+
+.dress-content {
+  display: none;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.dress-content.open {
+  display: block;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-name p,
+.category-menu p {
+  margin: 5px 0;
+}
+
+.dress-button {
+  background-color: black;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 25px;
+  border-radius: 50px;
+}
+.dress-button span {
+  color: #fff;
+}
+#div2 {
+  grid-area: 1 / 2 / 5 / 5;
+  height: 170vh;
+  padding-left: 60px;
+  border-bottom: 2px solid gray;
+  padding-bottom: 0px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0px;
+  height: 50px;
+  width: 90%;
+}
+.title h1 {
+  display: flex;
+
+  justify-content: center;
+}
+.end-title {
+  display: flex;
+  gap: 20px;
+}
+.title p {
+  display: flex;
+
+  justify-content: end;
+}
+.yeni-ürünler {
+  width: 100%;
+  height: 700px;
+}
+.yeni-ürünler h1 {
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 400px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 5 / 1;
+
+  width: 250px;
+  align-content: center;
+  align-self: center;
+}
+.div2 {
+  grid-area: 1 / 2 / 5 / 3;
+  width: 250px;
+  align-content: center;
+  align-self: center;
+}
+.div3 {
+  grid-area: 1 / 3 / 5 / 4;
+  align-content: center;
+  align-self: center;
+  width: 250px;
+}
+.square {
+  width: 250px;
+  height: 250px;
+  background-color: #f0eeed; /* Karelerin rengi */
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.parent h5 {
+  font-size: larger;
+}
+.parent .price {
+  font-size: xx-large;
+}
+.pagination-container {
+  margin-top: 150px;
+  margin-right: 150px;
+  width: 910px;
+  height: 200px;
+  display: flex;
+  justify-content: end;
+  align-items: self-start;
+  float: right;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  color: #ddd;
+  padding: 10px 40px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.pagination ul {
+  margin: 20px 30px;
+}
+
+.pagination ul li {
+  display: inline-block;
+  margin: 0 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  cursor: pointer;
+  background-position: 0 -45px;
+  transition: background-position 0.5s;
+}
+
+.pagination ul li.active {
+  color: #fff;
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.btn1,
+.btn2 {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #383838;
+  background: transparent;
+  outline: none;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.btn1 img {
+  width: 16px;
+  margin-right: 15px;
+}
+
+.btn2 img {
+  width: 16px;
+  margin-left: 15px;
+  transform: rotate(180deg);
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  margin-bottom: 0px;
+  background-color: #fff;
+  height: 180px;
+  width: 100%;
+}
+
+.subscribe-container {
+  width: 1240px;
+  height: 180px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 64px;
+  box-sizing: border-box;
+  color: white;
+  z-index: 2;
+}
+
+.text-section {
+  width: 551px;
+  height: 94px;
+  display: flex;
+  align-items: center;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  width: 404px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 340px;
+  height: 48px;
+  background-color: white;
+  border-radius: 24px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.input-group i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.input-group .subs-input {
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  font-size: 16px;
+}
+
+.subscribe-btn {
+  width: 340px;
+  height: 48px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: #e0e0e0;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  height: 600px;
+  position: relative;
+  top: -100px;
+  z-index: 1;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+  border-bottom: 2px solid #ddd;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  background-color: #333;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.social-media-icons a:hover {
+  background-color: #007bff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #f8f8f8;
+}
+
+.footer-border {
+  margin-bottom: 10px;
+  position: relative;
+  top: 200px;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 120px;
+  position: relative;
+  top: 200px;
+  width: 80%;
+}
+
+.footer-bottom-content p {
+  margin: 0;
+}
+
+.supported-banks i {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.supported-banks .fa-cc-visa {
+  color: #1a1f71;
+}
+
+.supported-banks .fa-cc-mastercard {
+  color: #eb001b;
+}
+
+.supported-banks .fa-cc-paypal {
+  color: #003087;
+}
