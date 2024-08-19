@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -91,65 +97,40 @@
     </nav>
 
     <section>
-      <div class="row row-cols-2">
-        <div class="col ust">
-          <div class="title">
-            <h1 style="font-size: 64px">FIND CLOTHES</h1>
-            <h1 style="font-size: 64px">THAT MATCHES</h1>
-            <h1 style="font-size: 64px">YOUR STYLE</h1>
-          </div>
+      <div id="section-grid">
+        <div id="main-title">
+          <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
           <p>
             Browse through our diverse range of meticulously crafted garments,
             designed to bring out your individuality and cater to your sense of
             style.
           </p>
-          <button class="button">Shop Now</button>
-        </div>
-        <div class="col yan">
-          <svg
-            class="birinci"
-            width="104"
-            height="104"
-            viewBox="0 0 104 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M52 0C53.7654 27.955 76.0448 50.2347 104 52C76.0448 53.7654 53.7654 76.0448 52 104C50.2347 76.0448 27.955 53.7654 0 52C27.955 50.2347 50.2347 27.955 52 0Z"
-              fill="black"
-            />
-          </svg>
-          <img src="img/file (2).png" alt="" />
-          <svg
-            class="ikinci"
-            width="56"
-            height="56"
-            viewBox="0 0 56 56"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M28 0C28.9506 15.0527 40.9472 27.0495 56 28C40.9472 28.9506 28.9506 40.9472 28 56C27.0495 40.9472 15.0527 28.9506 0 28C15.0527 27.0495 27.0495 15.0527 28 0Z"
-              fill="black"
-            />
-          </svg>
-        </div>
-        <div class="col alt">
-          <div class="row">
-            <div class="col" style="border-right-style: solid; width: 141px">
-              <h1>200+</h1>
+          <button>Shop Now</button>
+          <div class="numbers">
+            <div class="brands">
+              <span>200+</span>
               <p>International Brands</p>
             </div>
-            <div
-              class="col"
-              style="border-right-style: solid; margin-left: 32px; width: 160px"
-            >
-              <h1>2,000+</h1>
-              <p>High-Quality Products</p>
+            <div class="products">
+              <span>2,000+</span>
+              <p>High Quality Products</p>
             </div>
-            <div class="col" style="margin-left: 32px; width: 141px">
-              <h1>30,000+</h1>
+            <div class="customers">
+              <span>30,000+</span>
               <p>Happy Customers</p>
+            </div>
+          </div>
+        </div>
+        <div id="main-img">
+          <div class="images">
+            <div class="first-star">
+              <img src="img/Vector (1).png" />
+            </div>
+            <!-- <div class="first-img">
+              <img src="img/Rectangle.png" />
+            </div> -->
+            <div class="second-star">
+              <img src="img/Vector.png" />
             </div>
           </div>
         </div>
@@ -158,11 +139,11 @@
 
     <div class="markalar">
       <div>
-        <h1>VERSACE</h1>
-        <h1>ZARA</h1>
-        <h1>GUCCI</h1>
-        <h1>PRADA</h1>
-        <h1>Calvin Klein</h1>
+        <img src="img/versace-logo.png" />
+        <img src="img/zara-logo.png" />
+        <img src="img/gucci-logo.png" />
+        <img src="img/prada-logo.png" />
+        <img src="img/calvin-klein-logo.png" />
       </div>
     </div>
 
@@ -170,25 +151,33 @@
       <h1>NEW ARRIVALS</h1>
       <div class="parent">
         <div class="div1">
-          <div class="square"></div>
+          <div class="square">
+            <img src="img/new arrivals/Frame 32.png" alt="" />
+          </div>
           <h5 style="font-weight: bold">T-shirt with Tape Details</h5>
           <div class="star">★★★★★</div>
           <div class="price" style="font-weight: bold">120$</div>
         </div>
         <div class="div2">
-          <div class="square"></div>
+          <div class="square">
+            <img src="img/new arrivals/Frame 33.png" alt="" />
+          </div>
           <h5 style="font-weight: bold">Skinny Fit Jeans</h5>
           <div class="star">★★★★★</div>
           <div class="price" style="font-weight: bold">120$</div>
         </div>
         <div class="div3">
-          <div class="square"></div>
+          <div class="square">
+            <img src="img/new arrivals/Frame 34.png" alt="" />
+          </div>
           <h5 style="font-weight: bold">Checkered Shirt</h5>
           <div class="star">★★★★★</div>
           <div class="price" style="font-weight: bold">120$</div>
         </div>
         <div class="div4">
-          <div class="square"></div>
+          <div class="square">
+            <img src="img/new arrivals/Frame 38.png" alt="" />
+          </div>
           <h5 style="font-weight: bold">Sleeve Striped T-shirt</h5>
           <div class="star">★★★★★</div>
           <div class="price" style="font-weight: bold">120$</div>
@@ -200,25 +189,33 @@
       <h1>TOP SELLING</h1>
       <div class="parent">
         <div class="div1">
-          <div class="square"></div>
+          <div class="square">
+            <img src="img/top selling/Frame 32 (1).png" alt="" />
+          </div>
           <h5 style="font-weight: bold">Vertical Striped Shirt</h5>
           <div class="star">★★★★★</div>
           <div class="price" style="font-weight: bold">120$</div>
         </div>
         <div class="div2">
-          <div class="square"></div>
+          <div class="square">
+            <img src="img/top selling/Frame 33.png" alt="" />
+          </div>
           <h5 style="font-weight: bold">Courage Graphic T-shirt</h5>
           <div class="star">★★★★★</div>
           <div class="price" style="font-weight: bold">120$</div>
         </div>
         <div class="div3">
-          <div class="square"></div>
+          <div class="square">
+            <img src="img/top selling/Frame 34.png" alt="" />
+          </div>
           <h5 style="font-weight: bold">Loose Fit Burmuda Short</h5>
           <div class="star">★★★★★</div>
           <div class="price" style="font-weight: bold">120$</div>
         </div>
         <div class="div4">
-          <div class="square"></div>
+          <div class="square">
+            <img src="img/top selling/Frame 38.png" alt="" />
+          </div>
           <h5 style="font-weight: bold">Sleeve Striped T-shirt</h5>
           <div class="star">★★★★★</div>
           <div class="price" style="font-weight: bold">120$</div>
@@ -231,20 +228,16 @@
       <h1>BROWSE BY DRESS STYLE</h1>
       <div id="cssportal-grid">
         <div id="div1">
-          <h3>Casual</h3>
-          <img src="" alt="" />
+          <img src="img/browse/Frame 61.png" alt="" />
         </div>
         <div id="div2">
-          <h3>Formal</h3>
-          <img src="" alt="" />
+          <img src="img/browse/Frame 62.png" alt="" />
         </div>
         <div id="div3">
-          <h3>Party</h3>
-          <img src="" alt="" />
+          <img src="img/browse/Frame 64.png" alt="" />
         </div>
         <div id="div4">
-          <h3>Gym</h3>
-          <img src="" alt="" />
+          <img src="img/browse/Frame 63.png" alt="" />
         </div>
       </div>
     </section>
@@ -332,9 +325,8 @@
 
     <footer>
       <div class="footer-container">
-        <div class="footer-column">
+        <div class="footer-column logo-section">
           <div class="logo">
-            <!-- Logo yerleştir -->
             <img src="logo.png" alt="Logo" />
           </div>
           <p>Şirket hakkında kısa bir yazı.</p>
@@ -344,41 +336,45 @@
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-        <div class="footer-column">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Career</a></li>
-          </ul>
+        <div class="footer-columns-pair">
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Delivery Details</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-column">
-          <h3>Help</h3>
-          <ul>
-            <li><a href="#">Customer Support</a></li>
-            <li><a href="#">Delivery Details</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>FAQ</h3>
-          <ul>
-            <li><a href="#">Account</a></li>
-            <li><a href="#">Manage Deliveries</a></li>
-            <li><a href="#">Orders</a></li>
-            <li><a href="#">Payments</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Resources</h3>
-          <ul>
-            <li><a href="#">Free eBooks</a></li>
-            <li><a href="#">Development Tutorial</a></li>
-            <li><a href="#">How-to Blog</a></li>
-            <li><a href="#">YouTube Playlist</a></li>
-          </ul>
+        <div class="footer-columns-pair">
+          <div class="footer-column">
+            <h3>FAQ</h3>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Manage Deliveries</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Free eBooks</a></li>
+              <li><a href="#">Development Tutorial</a></li>
+              <li><a href="#">How-to Blog</a></li>
+              <li><a href="#">YouTube Playlist</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">

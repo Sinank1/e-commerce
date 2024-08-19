@@ -35,119 +35,46 @@
     background-color: #f2f0f1;
   }
 
-  section .row-cols-2 {
+  #section-grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
     width: 100%;
-    height: 1000px;
-    margin: 0;
-    padding: 0;
+    height: 100%;
+  }
+  #main-title {
+    grid-area: 1 / 1 / 4 / 3;
+    background-color: rgba(159, 235, 84, 0.5);
+  }
+  #main-img {
+    grid-area: 4 / 1 / 7 / 3;
+    background-color: rgba(8, 152, 24, 0.5);
   }
 
-  section .row .ust {
-    width: 100%;
-    height: 800px;
-  }
-
-  .row .ust .title {
-    height: auto;
-    width: 500px;
-    margin-left: 0px;
-    margin-top: 0px;
-    position: relative;
-    top: 40px;
-    left: 20px;
-    gap: 5px;
-  }
-
-  .row .ust .title h1 {
-    font-size: x-small;
-    font-weight: bolder;
-    height: auto;
-    width: 500px;
-  }
-
-  .row .ust p {
-    font-size: larger;
-    width: 520px;
-    height: 33px;
-    margin-left: 20px;
-    position: relative;
-    top: 50px;
-  }
-
-  .row .ust .button {
-    width: 560px;
-    height: 52px;
-    border-radius: 40px;
-    color: white;
-    background-color: black;
-    margin-top: 0px;
-    margin-left: 0px;
-    position: relative;
-    top: 130px;
-  }
-  .row .alt {
-    width: 400px;
-    position: relative;
-    top: -200px;
-  }
-  .col .row {
-    width: 400px;
-    position: relative;
-    top: -550px;
-  }
-  .row .alt .col {
-    width: 100%;
-  }
-
-  .alt .row :nth-child(1) {
-    border-right-style: none;
-  }
-
-  .row .yan {
-    position: relative;
-    top: -100px;
-    height: 500px;
-    width: 100%;
-  }
-
-  .row .yan .birinci {
-    float: right;
-    margin: 0;
-  }
-  .row .yan img {
-    position: relative;
-    height: 400px;
-    width: 500px;
-    right: 150px;
-    top: -200px;
-  }
-  .row .yan .ikinci {
-    position: relative;
-    top: -500px;
-  }
   .markalar {
     width: 100%;
-    height: 150px;
+    height: 122px;
     background-color: black;
   }
   .markalar div {
-    width: 100%;
-    height: 100px;
-    margin-left: 50px;
+    width: 200px;
+    display: flex;
   }
   .markalar h1 {
     color: white;
     margin-left: 20px;
-    margin-top: 0px;
+    margin-top: 50px;
+    font-size: 16px;
   }
   .yeni-ürünler {
     width: 100%;
-    height: 600px;
+    height: 700px;
     border-bottom-style: inset;
   }
   .yeni-ürünler h1 {
-    text-align: start;
-    justify-content: start;
+    text-align: center;
+    justify-content: center;
     margin-top: 50px;
   }
 
@@ -200,6 +127,10 @@
     border-radius: 20px;
     margin-bottom: 20px;
   }
+  .square img {
+    width: 200px;
+    height: 200px;
+  }
   .parent h5 {
     font-size: large;
   }
@@ -213,7 +144,7 @@
     background-color: white;
     color: black;
     border-radius: 40px;
-    margin-top: 20px;
+    margin-top: 60px;
     position: relative;
     left: 50%;
     top: 0px;
@@ -230,22 +161,24 @@
     top: 100px;
   }
   .browse {
-    height: 185vh;
+    height: 110vh;
     width: 90%;
     border-radius: 20px;
     margin-left: 20px;
     margin-top: 100px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    justify-content: start;
   }
 
   .browse h1 {
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: 20;
     position: relative;
-    left: 20px;
+    left: 100px;
     top: 70px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 200px;
   }
 
   #cssportal-grid {
@@ -255,8 +188,7 @@
     gap: 20px;
     width: 100%;
     height: 100%;
-    position: relative;
-    justify-content: center;
+    margin-right: 0px;
   }
   #div1 {
     grid-area: 1 / 1 / 2 / 2;
@@ -264,17 +196,15 @@
     font-weight: bolder;
     font-size: xx-large;
     position: relative;
-    height: 250px;
-    width: 400px;
-
+    left: -65px;
+    height: 200px;
+    width: 350px;
+    margin-right: 100px;
     border-radius: 40px;
   }
-  #div1 h3 {
-    font-weight: bolder;
-    font-size: xx-large;
-    position: relative;
-    left: 36px;
-    top: 25px;
+  #div1 img {
+    height: 200px;
+    width: 350px;
   }
   #div2 {
     grid-area: 2/1/3/2;
@@ -282,51 +212,218 @@
     font-weight: bolder;
     font-size: xx-large;
     position: relative;
-    height: 250px;
-    width: 400px;
+    left: -65px;
+    height: 200px;
+    width: 350px;
 
     right: 0px;
     border-radius: 40px;
   }
-  #div2 h3 {
-    font-weight: bolder;
-    font-size: xx-large;
-    position: relative;
-    left: 36px;
-    top: 25px;
+  #div2 img {
+    height: 200px;
+    width: 350px;
   }
   #div3 {
     grid-area: 3/1/4/2;
     background-color: #ffffff;
     font-weight: bolder;
     font-size: xx-large;
-    height: 250px;
-    width: 400px;
+    position: relative;
+    left: -65px;
+    height: 200px;
+    width: 350px;
 
     border-radius: 40px;
   }
-  #div3 h3 {
-    font-weight: bolder;
-    font-size: xx-large;
-    position: relative;
-    left: 36px;
-    top: 25px;
+  #div3 img {
+    height: 200px;
+    width: 350px;
   }
   #div4 {
     grid-area: 4/1/5/2;
     background-color: #ffffff;
     font-weight: bolder;
     font-size: xx-large;
-    height: 250px;
-    width: 400px;
+    position: relative;
+    left: -65px;
+    height: 200px;
+    width: 350px;
     border-radius: 40px;
   }
-  #div4 h3 {
-    font-weight: bolder;
-    font-size: xx-large;
+  #div4 img {
+    height: 200px;
+    width: 350px;
+  }
+  .review-container {
+    height: 600px;
+    width: 90%;
+    text-align: center;
     position: relative;
-    left: 36px;
-    top: 25px;
+    top: 0px;
+    left: 0px;
+  }
+
+  .review-title {
+    width: 300px;
+    height: 100px;
+    font-weight: bolder;
+    font-size: 32px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    margin-bottom: -100px;
+    margin-left: 0;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    display: flex;
+    align-items: self-end;
+    gap: 10px;
+  }
+  .nav-btn {
+    margin-bottom: -100px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .reviews-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+  }
+
+  .reviews {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 90px;
+    height: 400px;
+  }
+
+  .review {
+    flex: 0 0 calc(100% - 0px); /* Üç sütun düzeni */
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 600px; /* Kare şeklinde container */
+    width: 600px;
+  }
+  .subscribe {
+    height: 350px;
+    margin-left: 20;
+    margin-right: 20;
+    z-index: 1;
+  }
+  .subscribe-container {
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 390px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .text-section {
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .text-section h1 {
+    font-weight: bolder;
+    font-size: 40px;
+  }
+
+  .input-section {
+    width: 100%;
+    align-items: center;
+  }
+
+  .input-group,
+  .subscribe-btn {
+    width: 100%;
+  }
+  footer {
+    height: 800px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .footer-column {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .social-media-icons {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .social-media-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    background-color: #ddd;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+
+  .social-media-icons a:hover {
+    background-color: #007bff;
+  }
+
+  .footer-columns-pair {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .footer-bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .footer-bottom-content p {
+    margin-left: 0px;
+  }
+
+  .supported-banks {
+    margin-top: 20px;
   }
 }
 

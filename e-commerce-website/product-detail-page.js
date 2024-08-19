@@ -41,16 +41,16 @@ document.querySelectorAll(".choose-size .sizes div").forEach((sizeDiv) => {
 // görüntü seçme kısmı
 
 // Tüm renkli divler için bir tıklama olayı ekle
-document.querySelectorAll("#div1, #div2, #div3").forEach((div) => {
-  div.addEventListener("click", function () {
-    // Seçili div'e border ekle
-    document.querySelectorAll("#div1, #div2, #div3").forEach((d) => {
-      d.classList.remove("selected");
-    });
-    this.classList.add("selected");
+document.addEventListener("DOMContentLoaded", () => {
+  const smallImages = document.querySelectorAll("#div1, #div2, #div3");
+  const largeImage = document.getElementById("large-image");
 
-    // div4'ün arka plan rengini güncelle
-    const div4 = document.querySelector("#div4");
-    div4.style.backgroundColor = window.getComputedStyle(this).backgroundColor;
+  smallImages.forEach((div) => {
+    div.addEventListener("click", () => {
+      const img = div.querySelector("img");
+      if (img && largeImage) {
+        largeImage.src = img.src;
+      }
+    });
   });
 });

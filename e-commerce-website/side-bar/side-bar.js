@@ -1,3 +1,7 @@
+$(".btn").click(function () {
+  $(this).toggleClass("click");
+  $(".sidebar").toggleClass("show");
+});
 function toggleFilter() {
   const priceFilter = document.querySelector(".filter-content");
   const arrow = document.querySelector(".arrow");
