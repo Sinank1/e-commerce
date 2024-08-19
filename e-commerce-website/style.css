@@ -99,7 +99,6 @@ section {
   background-color: #f2f0f1;
 }
 #section-grid {
-  background-image: url(img/file.png);
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
@@ -132,9 +131,14 @@ section {
 }
 #main-title .numbers {
   display: flex;
-  width: 100%;
+  width: 600px;
   justify-content: space-between;
-  margin-top: 0px;
+  margin-top: 30px;
+}
+.brands-products {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
 }
 .numbers .brands span {
   font-weight: bolder;
@@ -157,6 +161,9 @@ section {
   font-weight: lighter;
   color: grey;
   font-size: 15px;
+}
+.numbers .customers {
+  margin-right: 0px;
 }
 .numbers .customers span {
   font-weight: bolder;
@@ -190,10 +197,11 @@ section {
   width: 56px;
   height: 56px;
   position: relative;
-  left: -100px;
+  left: -700px;
   top: 300px;
 }
-.images .first-img {
+.main-img .first-img {
+  display: none;
   width: 636px;
   height: 663px;
   position: relative;
@@ -208,7 +216,7 @@ section {
   width: 104px;
   height: 104px;
   position: relative;
-  left: 400px;
+  left: -250px;
   top: 100px;
 }
 .markalar {
@@ -565,10 +573,9 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 0px;
-  background-color: #fff;
-  height: 400px;
+  height: 300px;
 }
 
 .subscribe-container {
@@ -581,7 +588,7 @@ h3 {
   padding: 36px 64px;
   box-sizing: border-box;
   color: white;
-  z-index: 2;
+  z-index: 1;
 }
 
 .text-section {
@@ -643,7 +650,8 @@ footer {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-bottom: 0px;
-  height: auto;
+  height: 200px;
+  z-index: -1;
 }
 
 .footer-container {
@@ -651,9 +659,11 @@ footer {
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   border-bottom: 2px solid #ddd;
+  background-color: #f8f8f8;
 }
 .footer-container .logo-section {
   margin-right: 40px;
